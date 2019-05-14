@@ -1,0 +1,44 @@
+<!--pages/mine/mine.wxml-->
+<view class='mine'>
+    <view class='mine-bg-box'>
+        <image class='mine-bg' src="image/Free-Converter.com-timg_1-41214911.png" />
+    </view>
+    <view class='mine-information'>
+        <view class='wx-i'>
+            <image src="{{info.userImg}}" />
+            <text>{{info.userName}}</text>
+        </view>
+        <view class='i-left'>
+            <text>{{integral}}</text>
+            <text>我的积分</text>
+        </view>
+        <view 
+            class='i-left i-right' 
+            bindtap="btn_mine_activity" 
+            data-activity='{{my_enroll}}'
+        >
+            <text>{{my_enroll.length}}</text>
+            <text>我的活动</text>
+        </view>
+        <text bindtap='btn_editor' class='editor'>编辑</text>
+    </view>
+    <view class='recent_near'>
+        <content-title>
+            <text slot='slot-title'>近期活动</text>
+            <text slot='slot-text'>近期您参加的活动</text>
+        </content-title>
+        <view class='recent-activity'>
+            <view 
+                class='activity-item'
+                wx:for = '{{my_enroll_proccess}}'
+                wx:key = '{{id}}'
+                bindtap = 'btn_activity'
+                data-activity = '{{item}}'
+            >
+                <image src="{{'https://enroll.ty300.cn/upload/' + item.img}}" />
+                <text>{{item.title}}</text>
+                <text>{{item.created_at}}</text>
+            </view>
+        </view>
+    </view>
+</view>

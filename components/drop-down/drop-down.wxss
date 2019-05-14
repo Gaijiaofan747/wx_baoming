@@ -1,0 +1,34 @@
+/* components/drop-down/drop-down.wxss */
+.drop-down{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.drop-down-img{
+    width: 82rpx;
+    height: 62rpx;
+}
+
+.drop-down .drop-down-img image{
+    width: 82rpx;
+    height: 82rpx;
+}
+
+.drop-down text{
+    line-height: 40rpx;
+    color: rgba(150, 150, 150, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    margin: 6rpx 0 66rpx;
+}

@@ -1,0 +1,7 @@
+<!--components/drop-down/drop-down.wxml-->
+<view class='drop-down'>
+    <view class='drop-down-img'>
+        <image src="./image/drop-down.png" />
+    </view>
+    <text>腻害的小伙伴~都拉到底了</text>
+</view>

@@ -1,0 +1,36 @@
+/* pages/from-fill/sign-up/sign-up.wxss */
+
+@import '/pages/mine/information-editing/information-editing.wxss';
+
+.sign_up_input{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8rpx 40rpx 48rpx 50rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+.item-picker{
+    padding: 21rpx 0 21rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input-box .session{
+    display: inline-block;
+    width: 100%;
+    height: 48rpx;
+    text-align: center;
+    line-height: 48rpx;
+    color: #101010;
+    font-size: 28rpx;
+}

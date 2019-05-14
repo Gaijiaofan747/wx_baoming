@@ -1,0 +1,18 @@
+/* components/app-title/app-title.wxss */
+.return{
+    padding-top: 40rpx;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.return image{
+    width: 28rpx;
+    height: 28rpx;
+    margin: 0 10rpx 0 30rpx;
+}
+
+.return .title{
+    position: inherit;
+}

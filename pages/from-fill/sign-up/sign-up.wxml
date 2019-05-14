@@ -1,0 +1,57 @@
+<!--pages/from-fill/sign-up/sign-up.wxml-->
+<view class='sign_up_input'>
+    <form bindsubmit="formSubmit">
+        <view 
+            class='input-item'
+            wx:for='{{form_input_1}}'
+            wx:key='index'
+        >
+            <text>{{item.title}}</text>
+            <input class='input-box' type="{{item.type}}" value='{{item.user}}' name='{{item.value}}' />
+        </view>
+        <view class='input-item'>
+            <text>小记者性别</text> 
+            <radio-group class='input-box item-sex' name='gender' >   
+                <label><radio value='0' color='rgba(242,242,242,1)' checked />男</label>
+                <label><radio value='1' color='rgba(242,242,242,1)' />女</label>
+            </radio-group>
+        </view>
+        <view 
+            class='input-item'
+            wx:for='{{form_input_2}}'
+            wx:key='index'
+        >
+            <text>{{item.title}}</text>
+            <input class='input-box' type="{{item.type}}" name='{{item.value}}' value="{{item.user}}" />
+        </view>
+        <view class='input-item'>
+            <text>活动场次</text>
+            <view class='input-box item-picker'>
+                <picker 
+                    bindchange="bindSessionChange" 
+                    name='add_time' 
+                    value="{{SessionArray.length > 0?SessionArray[SessionIndex]:'默认'}}" 
+                    range="{{SessionArray}}"
+                    class='session'
+                >
+                    <text class="picker-text">{{SessionArray.length > 0?SessionArray[SessionIndex]:'默认'}}</text>
+                </picker>
+            </view>
+        </view>
+        <view class='input-item checkbox-item'>
+            <text>健康状态</text>
+            <checkbox-group 
+                name='healths' 
+                class='input-box item-sex checkbox-group'
+            >
+                <label class="checkbox" wx:for="{{items}}" wx:key="{{id}}">
+                    <checkbox value="{{item.name}}" checked="{{item.checked}}" value='{{item.value}}' />
+                    {{item.value}}
+                </label>
+                <image bindtap='btn_more' class='more' wx:if='{{!more}}' src="./image/more_1.png" />
+                <input type="text" name='healthsmore' class='more_input' wx:if='{{more}}' placeholder='请输入其他的健康情况' />
+            </checkbox-group>
+        </view>
+        <button formType='submit' class='submit'>提交</button>  
+    </form>
+</view>

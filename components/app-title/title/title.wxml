@@ -1,0 +1,4 @@
+<!--components/app-title/title/title.wxml-->
+<text class='title'>
+    <slot></slot>    
+</text>

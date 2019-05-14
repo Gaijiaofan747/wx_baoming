@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText":"八婺小记者",
+  "navigationBarTextStyle":"black",
+  "usingComponents": {
+    "activity": "/components/activity/activity",
+    "drop-down": "/components/drop-down/drop-down"
+  },
+  "enablePullDownRefresh": true
+}

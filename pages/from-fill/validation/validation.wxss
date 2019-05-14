@@ -1,0 +1,2 @@
+/* pages/from-fill/validation/validation.wxss */
+@import '/pages/mine/information-editing/information-editing.wxss';

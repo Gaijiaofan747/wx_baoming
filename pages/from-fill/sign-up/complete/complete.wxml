@@ -1,0 +1,9 @@
+<!--pages/from-fill/sign-up/complete/complete.wxml-->
+<view class='complete'>
+    <image class='complete-img' src="image/gif.gif" />
+    <view class='complete-text'>
+        <text>您的信息已提交</text>
+        <text>我们将及时与您联系</text>
+    </view>
+    <image class='shut_down' bindtap='shut_down' src="./image/cross.png" />
+</view>

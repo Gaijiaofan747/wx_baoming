@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/from-fill/children/children",
+    "pages/from-fill/sign-up/sign-up",
+    "pages/mine/mine",
+    "pages/posts/post-detail/post-detail",
+    "pages/mine/information-editing/information-editing",
+    "pages/from-fill/children/next-step/next-step",
+    "pages/posts/activity-detail/activity-detail",
+    "pages/from-fill/validation/validation",
+    "pages/mine/my-activity/my-activity",
+    "pages/from-fill/sign-up/complete/complete",
+    "components/activity/activity",
+    "components/drop-down/drop-down",
+    "components/app-title/app-title",
+    "components/app-title/title/title",
+    "components/content-title/content-title"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "首页",
+        "iconPath":"/images/page.png",
+        "selectedIconPath":"/images/active_page.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath":"/images/mine.png",
+        "selectedIconPath":"/images/active_mine.png"
+      }
+    ],
+    "backgroundColor":"#f7f7f7",
+    "borderStyle":"white",
+    "selectedColor":"#21A3DD",
+    "color":"#929292"
+  },
+  "usingComponents": {
+    "app-title": "/components/app-title/app-title",
+    "title": "/components/app-title/title/title",
+    "content-title":"/components/content-title/content-title"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

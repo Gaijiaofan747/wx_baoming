@@ -1,0 +1,21 @@
+/* pages/from-fill/children/next-step/next-step.wxss */
+@import '/pages/mine/information-editing/information-editing.wxss';
+
+.button-return{
+    margin-top: 84rpx;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 60rpx;
+    background: #fff;
+    color: rgba(33, 163, 221, 1);
+    font-size: 28rpx;
+    text-align: center;
+    font-family: Arial;
+    border: 2rpx solid rgba(33, 163, 221, 1);
+    padding: 0;
+}
+
+.submit{
+    margin-top: 24rpx;
+}

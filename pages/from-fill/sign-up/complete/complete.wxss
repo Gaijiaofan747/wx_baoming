@@ -1,0 +1,42 @@
+/* pages/from-fill/sign-up/complete/complete.wxss */
+
+.complete{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.complete-img{
+    width: 300rpx;
+    height: 300rpx;
+    position: absolute;
+    top: 358rpx;
+    left:50%;
+    margin-left: -150rpx;
+}
+
+.complete-text{
+    width: 280rpx;
+    height: 108rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 40rpx;
+    text-align: center;
+    font-family: PingFangSC-regular;
+    line-height: 58rpx;
+    position: absolute;
+    top:718rpx;
+    left:50%;
+    margin-left: -140rpx;
+}
+
+.complete-text text:nth-of-type(2){
+    font-size: 28rpx;
+}
+
+.shut_down{
+    width: 48rpx;
+    height: 48rpx;
+    position: absolute;
+    top: 288rpx;
+    left: 544rpx;
+}

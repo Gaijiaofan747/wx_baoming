@@ -1,0 +1,6 @@
+<!--components/content-title/content-title.wxml-->
+<view class='latest-top'>
+    <slot name='slot-title' class='latest-title'></slot>
+    <image class='waves' src="./image/waves.png" />
+    <slot name='slot-text' class='latest-title-text'></slot>
+</view>

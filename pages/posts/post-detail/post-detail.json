@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "activity": "/components/activity/activity",
+        "drop-down": "/components/drop-down/drop-down"
+    },
+    "navigationBarTitleText":"活动列表",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+}

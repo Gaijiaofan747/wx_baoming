@@ -1,0 +1,40 @@
+<!--pages/mine/information-editing/information-editing.wxml-->
+<view class='information-editing'>
+    <form bindsubmit="formSubmit">
+        <view class='input-item'>
+            <text>姓名</text>
+            <input class='input-box' type="text"  name='realName' value='{{name_user}}' />
+        </view>
+        <view class='input-item'>
+            <text>手机号</text>
+            <input class='input-box' type="number" name='phone' value='{{name_phone}}' />
+        </view>
+        <view class='input-item'>
+            <text>性别</text>
+            <radio-group class='input-box item-sex' name='gender'>   
+                <label><radio value='0' color='rgba(242,242,242,1)' checked='{{name_gender == "0"?"checked":""}}' />男</label>
+                <label><radio value='1' color='rgba(242,242,242,1)' checked='{{name_gender == "1"?"checked":""}}' />女</label>
+            </radio-group>
+        </view>
+        <view class='input-item'>
+            <text>所在地</text>
+            <picker 
+                class='input-box'
+                mode="region" 
+                value='{{region}}' 
+                bindchange='bindRegionChange' 
+                name='region'
+                custom-item='{{customItem}}'
+                >
+                <text>{{region[0]?region[0]:'省'}}</text>
+                <text>{{region[1]?region[1]:'市'}}</text>
+                <text>{{region[2]?region[2]:'区'}}</text>
+            </picker>
+        </view>
+        <view class='input-item'>
+            <text>详细地址</text>
+            <input class='input-box' type="text" name='address' value='{{name_address}}' />
+        </view>
+        <button formType='submit' class='submit'>保存</button>    
+    </form>
+</view>

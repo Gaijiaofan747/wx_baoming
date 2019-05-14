@@ -1,0 +1,10 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container' style='height:{{height}}'>
+    <image src="./image/6.jpg"  style='height:{{height}}' />
+    <text class='welcome'>欢迎使用<text class='welcome-text'>[八婺小记者]</text>小程序</text>
+    <button 
+        class='btn' 
+        open-type='getUserInfo' 
+        bindgetuserinfo="btn_bindGetUserInfo"
+        >微信授权</button>
+</view>

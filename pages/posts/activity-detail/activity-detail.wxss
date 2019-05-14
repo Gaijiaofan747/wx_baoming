@@ -1,0 +1,276 @@
+/* pages/posts/activity-detail/activity-detail.wxss */
+@import "../../../utils/wxParse/wxParse.wxss";
+
+.activity-detail{
+    position: relative;
+    height: 100%;
+    background:#f2f2f2;
+}
+
+.activity-content{
+    background: #f2f2f2;
+}
+
+.detail-head{
+    position: relative;
+    height: 680rpx;
+    overflow: hidden;
+}
+
+.detail-head image{
+    width: 100%;
+    height: 100%;
+}
+
+.detail-state{
+    position: absolute;
+    bottom: 0;
+    left: 18rpx;
+    right: 20rpx;
+    height: 192rpx;
+    background: #fff;
+    opacity: 0.9;
+    padding: 32rpx 22rpx 0 42rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.detail-left{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.detail-state-title{
+    font-weight: 700;
+    font-size: 36rpx;
+    line-height: 52rpx;
+    color: #101010;
+    font-family: PingFangSC-regular;
+}
+
+.detail-state-time{
+    line-height: 40rpx;
+    color: rgba(146, 146, 146, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    margin: 4rpx 0 10rpx;
+}
+
+.GPS{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.GPS image{
+    width: 34rpx;
+    height: 34rpx;
+}
+
+.GPS text{
+    line-height: 34rpx;
+    color: rgba(33, 163, 221, 1);
+    font-size: 24rpx;
+    font-family: PingFangSC-regular;
+}
+
+.detail-number{
+    line-height: 52rpx;
+    color: rgba(82, 82, 82, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+}
+
+.detail-content{
+    padding: 0 20rpx 28rpx 18rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.content-box{
+    background: #fff;
+    padding: 28rpx 32rpx 0 34rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.content-box-text{
+    color: rgba(49, 49, 49, 1);
+    font-size: 28rpx;
+    font-family: SourceHanSansSC-regular;
+    line-height: 42rpx;
+}
+
+/* .content-box-text image{
+    width: 650rpx;
+    height: 316rpx;
+    margin-top: 10rpx;
+} */
+
+.members-box{
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.members-title{
+    line-height: 84rpx;
+    color: rgba(49, 49, 49, 1);
+    font-size: 56rpx;
+    font-family: SourceHanSansSC-regular;
+}
+
+.members-box image{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.members-text{
+    line-height: 40rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+}
+
+.members-list{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 60rpx;
+}
+
+.members-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 40rpx 0 40rpx;
+    margin-top: 40rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.members-item image{
+    width: 96rpx;
+    height: 96rpx;
+    border-radius: 48rpx;
+}
+
+.avatarUrl_border{
+    border:1px solid #ccc;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.members-item text{
+    line-height: 34rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 24rpx;
+    margin-top: 14rpx;
+    font-family: PingFangSC-regular;
+    width: 96rpx;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.botton130rpx{
+    height: 130rpx;
+    background:#f2f2f2;
+}
+
+.sign_up{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 130rpx;
+    background: #fff;
+    padding: 14rpx 18rpx 16rpx 22rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.sign_up button{
+    width: 100%;
+    height: 100rpx;
+    background: #21a3dd;
+    color: #fff;
+    font-size: 32rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 100rpx;
+}
+
+.sign_up .have_to_sign_up{
+    background:#ccc;
+}
+
+.members-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 40rpx 0 40rpx;
+    margin-top: 40rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.more{
+    padding:24rpx 60rpx 0 60rpx; 
+}
+
+.more image{
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.more text{
+    line-height: 34rpx;
+    color: rgba(146, 146, 146, 1);
+    font-size: 24rpx;
+    font-family: PingFangSC-regular;
+    width: 48rpx;
+}

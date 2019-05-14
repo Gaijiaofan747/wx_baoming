@@ -1,0 +1,40 @@
+/* components/activity/activity.wxss */
+.activity-item{
+    width: 670rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.activity-item-img{
+    width: 670rpx;
+    height: 430rpx;
+}
+
+.activity-item-text{
+    width: 672rpx;
+    color: #101010;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    font-weight: 700;
+    margin:12rpx 0 10rpx 0;
+    display: -webkit-box ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+
+.activity-item-time{
+    line-height: 40px;
+    color: #101010;
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    margin-bottom: 30rpx;
+}

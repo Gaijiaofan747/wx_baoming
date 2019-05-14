@@ -1,0 +1,50 @@
+<!--pages/posts/posts.wxml-->
+<view class='posts-content'>
+    <swiper
+        class='swiper-box'
+        indicator-dots="true"
+        indicator-color="#ffffff"
+        indicator-active-color="#000000"
+        autoplay="true"
+        interval="3000"
+        duration="500"
+        circular="true"
+        >
+        <swiper-item
+            wx:for = '{{post_data.banner}}'
+            wx:key = '{{index}}'
+        >
+            <image src="{{'https://enroll.ty300.cn/upload/' + item.pic}}" />
+        </swiper-item>
+    </swiper>
+    <view class='activity'>
+        <view bindtap="btn_public" class='activity_1'>
+            <text class='activity-title'>公益活动</text>
+            <text class='activity-text'>共有{{post_data.gycount.length}}个活动进行中</text>
+            <button class='to_view'>立即查看</button>
+            <image class='activity-img' src="image/Free-Converter.com-timg_5-28774653.png" />
+        </view>
+        <view bindtap="btn_parents" class='activity_1 activity_2'>
+            <text class='activity-title'>亲子活动</text>
+            <text class='activity-text'>共有{{post_data.qzcount.length}}个活动进行中</text>
+            <button class='to_view'>立即查看</button>
+            <image class='activity-img' src="image/Free-Converter.com-timg_3-33994912.png" />
+        </view>
+        <view class='latest'>
+            <content-title>
+                <text slot='slot-title'>最新活动</text>
+                <text slot='slot-text'>亲子活动报名系列</text>
+            </content-title>
+            <activity
+                bindtap = 'btn_activity'
+                wx:for = '{{post_data.lastList}}'
+                wx:key = '{{index}}'
+                itemData = '{{item}}'
+                lastId = '{{index}}'
+                data-activity = '{{item}}'
+            >
+            </activity>
+        </view>
+    </view>
+    <drop-down wx:if = '{{drop_down}}'></drop-down>
+</view>

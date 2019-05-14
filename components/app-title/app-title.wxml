@@ -1,0 +1,7 @@
+<!--components/app-title/app-title.wxml-->
+<view class='return'>
+    <image src="/images/左箭头.png" />
+    <title>
+        <slot></slot>
+    </title>
+</view>

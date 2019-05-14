@@ -1,0 +1,14 @@
+<!--pages/from-fill/validation/validation.wxml-->
+<view class='information-editing'>
+    <form bindsubmit="formSubmit">
+        <view 
+            class='input-item'
+            wx:for='{{form_input}}'
+            wx:key='index'
+        >
+            <text>{{item.title}}</text>
+            <input class='input-box' type="{{item.type}}" name='{{item.value}}' />
+        </view>
+        <button formType='submit' class='submit'>提交</button>    
+    </form>
+</view>

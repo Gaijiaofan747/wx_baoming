@@ -1,0 +1,35 @@
+/* components/content-title/content-title.wxss */
+.latest-top{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom:70rpx;
+}
+
+.latest-top text:nth-of-type(1){
+    width: 232rpx;
+    height: 84rpx;
+    color: #313131;
+    font-size: 56rpx;
+    font-family: SourceHanSansSC-regular;
+}
+
+.waves{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.latest-top text:nth-of-type(2){
+    width: 224rpx;
+    height: 40rpx;
+    color: #101010;
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+}

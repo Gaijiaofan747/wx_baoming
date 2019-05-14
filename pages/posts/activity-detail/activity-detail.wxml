@@ -1,0 +1,72 @@
+<!--pages/posts/activity-detail/activity-detail.wxml-->
+<import src="../../../utils/wxParse/wxParse.wxml"/>
+
+<view class='activity-detail'>
+    <view class='activity-content'>
+        <view class='detail-head'>
+            <image src="{{activity_data.img}}" />
+            <view class='detail-state'>
+                <view class='detail-left'>
+                    <text class='detail-state-title'>{{activity_data.title}}</text>
+                    <text class='detail-state-time'>{{'报名截止时间：' + activity_data.close_time}}</text>
+                    <!-- <text class='detail-state-time' wx:if='{{my_activity == 0}}'>{{'报名截止时间：' + activity_data.close_time}}</text>
+                    <text class='detail-state-time' wx:if='{{my_activity == 1}}'>{{'报名参加时间：' + activity_data.close_time}}</text> -->
+                    <view class='GPS'>
+                        <image src="./image/GPS.png" />
+                        <text>{{activity_data.city + activity_data.address}}</text>
+                    </view>
+                </view>
+                <text class='detail-number'>{{members_list.length}}/{{activity_data.num}}人</text>
+            </view>
+        </view>
+        <view class='detail-content'>
+            <view class='content-box'>
+                <view class='content-box-text'>
+                    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+                </view>
+            </view>
+            <view class='members-box'>
+                <text class='members-title'>已报名</text>
+                <image src="./image/waves.png" />
+                <text class='members-text'>{{members_list.length}}人已报名</text>
+                <view class='members-list'>
+                    <view 
+                        class='members-item'
+                        wx:for = '{{_members_list}}'
+                        wx:key = 'index'
+                    >
+                        <image src="{{item.avatarUrl}}" class='avatarUrl_border' />
+                        <text>{{item.nickname}}</text>
+                    </view>
+                    <view 
+                        slot = 'slot-more' 
+                        wx:if = '{{more_isShow}}'
+                        bindtap = 'more' 
+                        class = 'more members-item'
+                        >
+                        <image src="./image/more.png" />
+                        <text>更多</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='botton130rpx'></view>
+    </view>
+    <view class='sign_up'>
+        <button 
+            bindtap='btn_sign_up' 
+            type="button"
+            style="display:{{my_activity == 0 ? 'block' : 'none'}}"
+            >我要报名</button>
+        <button 
+            type="button"
+            class='have_to_sign_up'
+            style="display:{{my_activity == 1 ? 'block' : 'none'}}"
+            >已报名</button>
+        <button 
+            type="button"
+            class='have_to_sign_up'
+            style="display:{{my_activity == 2 ? 'block' : 'none'}}"
+            >已报满</button>
+    </view>
+</view>

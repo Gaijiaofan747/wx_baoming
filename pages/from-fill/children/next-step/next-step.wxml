@@ -1,0 +1,29 @@
+<view class='information-editing'>
+    <form bindsubmit="formSubmit">
+        <view 
+            class='input-item'
+            wx:for='{{form_input}}'
+            wx:key='index'
+        >
+            <text>{{item.title}}</text>
+            <input class='input-box' type="{{item.type}}" name='{{item.value}}' value='{{item.user}}' />
+        </view>
+        <view class='input-item'>
+            <text>所在地</text>
+            <picker 
+                class='input-box'
+                mode="region" 
+                value='{{region}}' 
+                bindchange='bindRegionChange' 
+                name='region'
+                custom-item='{{customItem}}'
+                >
+                <text>{{region[0]}}</text>
+                <text>{{region[1]}}</text>
+                <text>{{region[2]}}</text>
+            </picker>
+        </view>
+        <button class='button-return submit' bindtap="return">上一步</button>
+        <button formType='submit' class='submit'>提交</button>    
+    </form>
+</view>

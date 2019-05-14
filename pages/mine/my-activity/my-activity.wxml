@@ -1,0 +1,14 @@
+<!--pages/mine/my-activity/my-activity.wxml-->
+<view class='my-activity'>
+    <view 
+        class='activity-item'
+        wx:for = '{{activity_list}}'
+        wx:key = '{{index}}'
+        bindtap = 'btn_activity'
+        data-activity = '{{item}}'
+        >
+        <image class='activity-item-img' src="{{'https://enroll.ty300.cn/upload/' + item.img}}" />
+        <text class='activity-item-text'>{{item.title}}</text>
+        <text class='activity-item-time'>{{item.created_at}}</text>
+    </view>
+</view>

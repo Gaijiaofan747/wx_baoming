@@ -1,0 +1,155 @@
+/* pages/mine/mine.wxss */
+
+.mine {
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    position: relative;
+}
+
+.mine .mine-bg-box {
+    width: 100%;
+    height: 450rpx;
+    overflow: hidden;
+}
+
+.mine-bg {
+    width: 100%;
+    height: 750rpx;
+}
+
+.mine-information {
+    width: 670rpx;
+    height: 400rpx;
+    background: #fff;
+    position: absolute;
+    top: 392rpx;
+    left: 50%;
+    margin-left: -335rpx;
+}
+
+.i-left {
+    width: 254rpx;
+    height: 200rpx;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 46rpx;
+    font-size: 32rpx;
+    font-family: PingFangSC-regular;
+    color: #313131;
+}
+
+.i-left text:nth-of-type(1) {
+    color: rgba(33, 163, 221, 1);
+}
+
+.i-right {
+    left: 100%;
+    margin-left: -254rpx;
+}
+
+.editor {
+    position: absolute;
+    top: 18rpx;
+    right: 34rpx;
+    line-height: 40rpx;
+    color: rgba(146, 146, 146, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+}
+
+.wx-i {
+    width: 160rpx;
+    position: absolute;
+    top: -80rpx;
+    left: 50%;
+    margin-left: -80rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.wx-i image {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    margin-bottom: 20rpx;
+}
+
+.wx-i text {
+    width: 160rpx;
+    line-height: 52rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 36rpx;
+    font-family: PingFangSC-regular;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.recent_near {
+    padding-top: 370rpx;
+    background: #f2f2f2;
+}
+
+.recent-activity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* justify-content: space-around; */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.activity-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 315rpx;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 20px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    margin: 0 40rpx 0 40rpx;
+}
+
+.activity-item:nth-child(even){
+    margin: 0 40rpx 0 0;
+}
+
+.activity-item image {
+    width: 316rpx;
+    height: 360rpx;
+}
+
+.activity-item text:nth-of-type(1) {
+    margin: 28rpx 0 38rpx;
+    font-weight: 700;
+}
+
+.activity-item text:nth-of-type(2) {
+    margin-bottom: 48rpx;
+}

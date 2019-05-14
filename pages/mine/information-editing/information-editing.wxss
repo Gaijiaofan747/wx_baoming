@@ -1,0 +1,244 @@
+/* pages/mine/information-editing/information-editing.wxss */
+.information-editing{
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8rpx 40rpx 48rpx 50rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+.input-item{
+    padding-top: 30rpx;
+    position: relative;
+}
+
+.input-item > text{
+    line-height: 40rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular; 
+    margin-left: 6rpx;
+}
+
+.input-item .input-box{
+    width: 100%;
+    height: 90rpx;
+    line-height: 40rpx;
+    border-radius: 60rpx;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+    margin-top: 14rpx;
+}
+
+picker.input-box{
+    padding: 21rpx 0 21rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+picker.input-box text{
+    display: inline-block;
+    width: 33%;
+    height: 48rpx;
+    text-align: center;
+    line-height: 48rpx;
+    color: #929292;
+    font-size: 28rpx;
+}
+
+picker.input-box text:nth-of-type(1),picker.input-box text:nth-of-type(2){
+    border-right: 2rpx solid #bbb;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.position{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 40rpx;
+    right: 40rpx;
+}
+
+.position image{
+    width: 34rpx;
+    height: 34rpx;
+}
+
+.position text{
+    height: 34rpx;
+    color: rgba(33, 163, 221, 1);
+    font-size: 24rpx;
+    font-family: PingFangSC-regular;
+}
+
+.submit{
+    margin-top: 100rpx;
+    margin-bottom: 50rpx;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 60rpx;
+    background-color: rgba(33, 163, 221, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 28rpx;
+    text-align: center;
+    font-family: Arial;
+}
+
+/* radio 单选 */
+
+.input-item .input-box{
+    width: 100%;
+    height: 90rpx;
+    line-height: 40rpx;
+    border-radius: 60rpx;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+    margin-top: 14rpx;
+}
+
+.input-item .item-sex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 48rpx; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.input-item .item-sex label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgba(16, 16, 16, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    width: 50%;
+}
+
+.input-item .item-sex radio,.input-item .item-sex checkbox{
+    margin-right: 24rpx;
+    border-radius: 50%;
+    width: 40rpx;
+    height: 40rpx;
+    border: 4rpx solid #5677fc;
+    font-size: 0;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before,checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+    border-radius: 50%;
+    width: 20rpx; 
+    height: 20rpx; 
+    /* text-align: center; */
+    font-size:0rpx; /* 对勾大小 去掉 */
+    background-color: #5677fc; 
+    transform:translate(-50%, -50%) scale(1);
+    -webkit-transform:translate(-50%, -50%) scale(1);
+ }
+
+radio .wx-radio-input,checkbox .wx-checkbox-input{
+    border-radius: 50%;
+    width: 40rpx;
+    height: 40rpx; 
+    border:none;
+    background: rgba(242,242,242,1)
+}
+
+/* checkbox 复选框 */
+.checkbox-item{
+    margin-bottom:32rpx;
+}
+
+.checkbox-item .input-box{
+    width: 100%;
+    line-height: 40rpx;
+    border-radius: 60rpx;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+    margin-top: 14rpx;
+}
+
+.checkbox-item .item-sex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 48rpx; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.checkbox-item .checkbox-group{
+    height:338rpx;
+    border-radius: 8rpx;
+    padding-bottom: 100rpx;
+    padding-top: 10rpx;
+    position: relative;
+}
+
+.checkbox-item .checkbox-group label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgba(16, 16, 16, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    margin-right:190rpx;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 290rpx;
+    margin-right:0;
+} 
+
+.more{
+    position: absolute;
+    bottom: 40rpx;
+    left: 48rpx;
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.more_input{
+    position: absolute;
+    bottom: 24rpx;
+    left: 48rpx;
+    width: 400rpx;
+    height: 70rpx;
+    border:2rpx solid #929292;
+    border-radius: 6rpx;
+    text-align: left;
+    padding-left: 10rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 26rpx;
+    color:#929292;
+}

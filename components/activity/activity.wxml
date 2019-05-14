@@ -1,0 +1,6 @@
+<!--components/activity/activity.wxml-->
+<view class='activity-item'>
+    <image class='activity-item-img' src="{{activity_data.img}}" />
+    <text class='activity-item-text'>{{activity_data.title}}</text>
+    <text class='activity-item-time'>报名截止时间：{{activity_data.close_time}}</text>
+</view>

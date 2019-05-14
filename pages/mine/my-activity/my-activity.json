@@ -1,0 +1,7 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "我的活动",
+  "usingComponents": {
+    "activity": "/components/activity/activity"
+  }
+}

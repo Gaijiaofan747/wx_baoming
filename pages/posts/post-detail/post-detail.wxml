@@ -1,0 +1,40 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+<view class='post-detail'>
+    <view class='detail-tab'>
+        <view
+            wx:for = '{{list}}'
+            wx:key = 'index'
+            class = "list_item"
+            data-activeIndex = '{{index}}'
+            catchtap = "tabClick"
+        >
+            <text class="{{activeIndex == index ? 'on' : ''}}">{{item}}</text>
+            <view class="tab-border {{activeIndex == index ? 'on-border' : ''}}"></view>
+        </view>
+    </view>
+    <view class='tab-content'>
+        <view style="display:{{activeIndex != 0 ? 'none' : 'block'}}">
+            <activity
+                bindtap="btn_activity"
+                wx:for = '{{gycount}}'
+                wx:key = '{{index}}'
+                itemData = '{{item}}'
+                itemId = '{{index}}'
+                data-activity = '{{item}}'
+            >
+            </activity>
+        </view>
+        <view style="display:{{activeIndex != 1 ? 'none' : 'block'}}">
+            <activity
+                bindtap="btn_activity" 
+                wx:for = '{{qzcount}}'
+                wx:key = '{{index}}'
+                itemData = '{{item}}'
+                itemId = '{{index}}'
+                data-activity = '{{item}}'
+            >
+            </activity>
+        </view>
+    </view>
+    <drop-down wx:if = '{{drop_down}}'></drop-down>
+</view>
